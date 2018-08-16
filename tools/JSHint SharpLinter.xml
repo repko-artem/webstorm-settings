@@ -1,0 +1,31 @@
+<toolSet name="JSHint SharpLinter">
+  <tool name="1 file" description="Для одного файла" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="true" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="D:\Projects\ts7\trunk\DevTools\JSHint\SharpLinter\SharpLinter.exe" />
+      <option name="PARAMETERS" value="-v1 -r $FilePath$" />
+      <option name="WORKING_DIRECTORY" value="D:/Projects/ts7/trunk/TSBpm/Src/Lib/Terrasoft.Nui" />
+    </exec>
+    <filter>
+      <option name="NAME" value="Errors" />
+      <option name="DESCRIPTION" />
+      <option name="REGEXP" value=" $FILE_PATH$\:.+Line $LINE$ character $COLUMN$" />
+    </filter>
+    <filter>
+      <option name="NAME" value="Implied Globals" />
+      <option name="DESCRIPTION" />
+      <option name="REGEXP" value="$FILE_PATH$    \w+: $LINE$$" />
+    </filter>
+    <filter>
+      <option name="NAME" value="Unused variables" />
+      <option name="DESCRIPTION" />
+      <option name="REGEXP" value="$FILE_PATH$    \w+: $LINE$, $COLUMN$$" />
+    </filter>
+  </tool>
+  <tool name="All files" description="Для всех файлов" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="true" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="D:\Projects\ts7\trunk\DevTools\JSHint\SharpLinter\SharpLinter.exe" />
+      <option name="PARAMETERS" value="-v3 -rf Resources\demo\*.js -rf Resources\Terrasoft\*.js" />
+      <option name="WORKING_DIRECTORY" value="D:/Projects/ts7/trunk/TSBpm/Src/Lib/Terrasoft.Nui" />
+    </exec>
+  </tool>
+</toolSet>

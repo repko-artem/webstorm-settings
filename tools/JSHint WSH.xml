@@ -1,0 +1,31 @@
+<toolSet name="JSHint WSH">
+  <tool name=" 1 file" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="true" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value=" D:\Projects\ts7\trunk\DevTools\JSHint\JSHintWsh\go.cmd" />
+      <option name="PARAMETERS" value=" 1 $FilePath$" />
+      <option name="WORKING_DIRECTORY" value="D:/Projects/ts7/trunk/DevTools/JSHint/JSHintWsh/" />
+    </exec>
+    <filter>
+      <option name="NAME" value="Errors" />
+      <option name="DESCRIPTION" />
+      <option name="REGEXP" value="$FILE_PATH$\:.+Line $LINE$ character $COLUMN$" />
+    </filter>
+    <filter>
+      <option name="NAME" value="Implied Globals" />
+      <option name="DESCRIPTION" />
+      <option name="REGEXP" value=" $FILE_PATH$    \w+: $LINE$$" />
+    </filter>
+    <filter>
+      <option name="NAME" value="Unused variables" />
+      <option name="DESCRIPTION" />
+      <option name="REGEXP" value=" $FILE_PATH$    \w+: $LINE$, $COLUMN$$" />
+    </filter>
+  </tool>
+  <tool name="All files" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="true" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value=" $ProjectFileDir$\..\..\..\..\DevTools\JSHint\JSHintWsh\go.cmd" />
+      <option name="PARAMETERS" value="1 $ProjectFileDir$\Resources\demo $ProjectFileDir$\Resources\Terrasoft" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$/../../../../DevTools/JSHint/JSHintWsh/" />
+    </exec>
+  </tool>
+</toolSet>

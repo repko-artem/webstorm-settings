@@ -1,0 +1,17 @@
+<application>
+  <component name="libraryTable">
+    <library name="ExtJS GPL-4.2" type="javaScript">
+      <properties>
+        <option name="frameworkName" value="ExtJS 4.2" />
+        <option name="frameworkVersion" value="4.2.0" />
+      </properties>
+      <CLASSES>
+        <root url="file://$USER_HOME$/.WebStorm6/system/extLibs/http_cdn.sencha.io_ext-4.2.0-gpl_ext-all-debug-w-comments.js" />
+      </CLASSES>
+      <DOCUMENTATION>
+        <root url="http://docs.sencha.com/extjs/4.2.0/#!/api" />
+      </DOCUMENTATION>
+      <SOURCES />
+    </library>
+  </component>
+</application>

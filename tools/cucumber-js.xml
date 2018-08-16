@@ -1,0 +1,23 @@
+<toolSet name="cucumber-js">
+  <tool name="cti" description="--no-debug-brk" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="true" showConsoleOnStdErr="true" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="C:\Users\A.Repko\AppData\Roaming\npm\node-debug.cmd" />
+      <option name="PARAMETERS" value="--no-debug-brk --no-preload node_modules\cucumber\bin\cucumber.js cti/ -r core/step_definitions -r cti/step_definitions -r platform/step_definitions -t @1" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+  <tool name="operator_single_window" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="true" showConsoleOnStdErr="true" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="C:\Users\A.Repko\AppData\Roaming\npm\node-debug.cmd" />
+      <option name="PARAMETERS" value="--no-debug-brk --no-preload node_modules\cucumber\bin\cucumber.js operator_single_window/ -r core/step_definitions -r operator_single_window/step_definitions -f pretty -t @1" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+  <tool name="bpms" description="--no-debug-brk" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="true" showConsoleOnStdErr="true" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="C:\Users\A.Repko\AppData\Roaming\npm\node-debug.cmd" />
+      <option name="PARAMETERS" value="--no-debug-brk --no-preload node_modules\cucumber\bin\cucumber.js bpms/ -r core/step_definitions -r bpms/step_definitions -r cti/step_definitions -r platform/step_definitions -t @1" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+</toolSet>

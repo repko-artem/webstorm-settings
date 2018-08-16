@@ -1,0 +1,64 @@
+<templateSet group="BPMonline">
+  <template name="diffInsert" value="{&#10;&#9;&quot;operation&quot;: &quot;insert&quot;,&#10;&#9;&quot;name&quot;: &quot;$NAME$&quot;,&#10;&#9;&quot;parentName&quot;: &quot;$PARENT_NAME$&quot;,&#10;&#9;&quot;propertyName&quot;: &quot;items&quot;,&#10;&#9;&quot;values&quot;: {&#10;&#9;&#9;&quot;itemType&quot;: Terrasoft.ViewItemType.$TYPE$&#10;&#9;}&#10;}," description="New diff operation" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARENT_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="diffLabel" value="{&#10;&#9;&quot;operation&quot;: &quot;insert&quot;,&#10;&#9;&quot;name&quot;: &quot;$NAME$&quot;,&#10;&#9;&quot;parentName&quot;: &quot;$PARENT_CONTAINER$&quot;,&#10;&#9;&quot;propertyName&quot;: &quot;items&quot;,&#10;&#9;&quot;values&quot;: {&#10;&#9;&#9;&quot;itemType&quot;: Terrasoft.ViewItemType.LABEL,&#10;&#9;&#9;&quot;caption&quot;: {bindTo: &quot;Resources.Strings.$CAPTION$&quot;}&#10;&#9;}&#10;}" description="Inserts diff for label" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARENT_CONTAINER" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CAPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="diffContainer" value="{&#10;&#9;&quot;operation&quot;: &quot;insert&quot;,&#10;&#9;&quot;name&quot;: &quot;$NAME$&quot;,&#10;&#9;&quot;parentName&quot;: &quot;$PARENT_CONTAINER$&quot;,&#10;&#9;&quot;propertyName&quot;: &quot;items&quot;,&#10;&#9;&quot;values&quot;: {&#10;&#9;&#9;&quot;id&quot;: &quot;$NAME$&quot;,&#10;&#9;&#9;&quot;itemType&quot;: Terrasoft.ViewItemType.CONTAINER,&#10;&#9;&#9;&quot;selectors&quot;: {&#10;&#9;&#9;&#9;&quot;wrapEl&quot;: &quot;#$NAME$&quot;&#10;&#9;&#9;},&#10;&#9;&#9;&quot;classes&quot;: {&#10;&#9;&#9;&#9;&quot;wrapClassName&quot;: [&quot;$NAME$&quot;]&#10;&#9;&#9;},&#10;&#9;&#9;&quot;items&quot;: []&#10;&#9;}&#10;}" description="Inserts diff for container" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARENT_CONTAINER" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="diffButton" value="{&#10;&#9;&quot;operation&quot;: &quot;insert&quot;,&#10;&#9;&quot;name&quot;: &quot;$NAME$&quot;,&#10;&#9;&quot;parentName&quot;: &quot;$PARENT_CONTAINER$&quot;,&#10;&#9;&quot;propertyName&quot;: &quot;items&quot;,&#10;&#9;&quot;values&quot;: {&#10;&#9;&#9;&quot;id&quot;: &quot;$NAME$&quot;,&#10;&#9;&#9;&quot;tag&quot;: &quot;$NAME$&quot;,&#10;&#9;&#9;&quot;itemType&quot;: Terrasoft.ViewItemType.BUTTON,&#10;&#9;&#9;&quot;classes&quot;: {&#10;&#9;&#9;&#9;&quot;textClass&quot;: [&quot;$TEXT_CLASS$&quot;]&#10;&#9;&#9;},&#10;&#9;&#9;&quot;style&quot;: Terrasoft.controls.ButtonEnums.style.$STYLE$,&#10;&#9;&#9;&quot;caption&quot;: {bindTo: &quot;Resources.Strings.$CAPTION$&quot;},&#10;&#9;&#9;&quot;click&quot;: {bindTo: &quot;$HANDLER_NAME$&quot;}&#10;&#9;}&#10;}" description="Inserts diff for button" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARENT_CONTAINER" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEXT_CLASS" expression="" defaultValue="main-buttons" alwaysStopAt="true" />
+    <variable name="STYLE" expression="" defaultValue="GREEN" alwaysStopAt="true" />
+    <variable name="CAPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="HANDLER_NAME" expression="" defaultValue="on$NAME$Click" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="diffEdit" value="{&#10;&#9;&quot;operation&quot;: &quot;insert&quot;,&#10;&#9;&quot;name&quot;: &quot;$NAME$&quot;,&#10;&#9;&quot;parentName&quot;: &quot;$PARENT_CONTAINER_NAME$&quot;,&#10;&#9;&quot;propertyName&quot;: &quot;items&quot;,&#10;&#9;&quot;values&quot;: {&#10;&#9;&#9;&quot;dataValueType&quot;: Terrasoft.DataValueType.$DATA_VALUE_TYPE$,&#10;&#9;&#9;&quot;classes&quot;: {&#10;&#9;&#9;&#9;&quot;wrapClass&quot;: ['base-edit controlBaseedit']&#10;&#9;&#9;},&#10;&#9;&#9;&quot;value&quot;: {&quot;bindTo&quot;: &quot;%VIEW_MODEL_COLUMN%&quot;},&#10;&#9;&#9;&quot;labelConfig&quot;: {&#10;&#9;&#9;&#9;&quot;visible&quot;: $LABEL_VISIBLE$&#10;&#9;&#9;},&#10;&#9;&#9;&quot;hasClearIcon&quot;: $HAS_CLEAR_ICON$&#10;&#9;}&#10;}" description="Inserts diff for text edit contorl" toReformat="true" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PARENT_CONTAINER_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DATA_VALUE_TYPE" expression="" defaultValue="TEXT" alwaysStopAt="true" />
+    <variable name="LABEL_VISIBLE" expression="" defaultValue="false" alwaysStopAt="true" />
+    <variable name="HAS_CLEAR_ICON" expression="" defaultValue="true" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="schema" value="define(&quot;$SCHEMA_NAME$&quot;, [&quot;terrasoft&quot;], function(Terrasoft) {&#10;&#9;return {&#10;&#9;&#9;messages: {},&#10;&#9;&#9;mixins: {},&#10;&#9;&#9;attributes: {},&#10;&#9;&#9;methods: {},&#10;&#9;&#9;diff:  /**SCHEMA_DIFF*/[]&#10;&#9;}&#10;});" description="Схема" toReformat="false" toShortenFQNames="true">
+    <variable name="SCHEMA_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="mvalue" value=" data-item-marker=&quot;$VALUE$&quot;" description="Inserts marker value" toReformat="false" toShortenFQNames="true">
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+      <option name="HTML_TEXT" value="false" />
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML_TEXT" value="true" />
+    </context>
+  </template>
+</templateSet>

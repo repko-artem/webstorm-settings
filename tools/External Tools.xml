@@ -1,0 +1,21 @@
+<toolSet name="External Tools">
+  <tool name="JSHint Global" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value=" c:\DevTools\JSHint\tsJSHint.cmd" />
+      <option name="PARAMETERS" value=" $FilePath$" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+    <filter>
+      <option name="NAME" value="Format Output" />
+      <option name="DESCRIPTION" />
+      <option name="REGEXP" value="$FILE_PATH$\( *$LINE$, *$COLUMN$\).+" />
+    </filter>
+  </tool>
+  <tool name="Siesta Conf" description="http://tswiki/pages/viewpage.action?pageId=22184043#id-%D0%97%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D1%82%D0%B5%D1%81%D1%82%D0%BE%D0%B2Siesta-preconfig" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="D:\Projects\Siesta\bin\puppeteer.bat" />
+      <option name="PARAMETERS" value="http://arepko/DevTrunk/0/TestTools/Tests.Debug.aspx --config-file E:\Projects\ts7\trunk\TSBpm\Src\Lib\Terrasoft.Nui\Resources\Terrasoft\AutoTesting\conf-all.json --filter $FileNameWithoutExtension$ --verbose" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+</toolSet>
