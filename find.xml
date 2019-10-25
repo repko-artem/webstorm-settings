@@ -5,7 +5,7 @@
     <option name="defaultScopeName" value="All Places" />
     <option name="CASE_SENSITIVE_SEARCH" value="true" />
     <option name="SEARCH_SCOPE" value="All Places" />
-    <option name="FILE_MASK" value="*Tests.js" />
+    <option name="FILE_MASK" value="*.js" />
     <mask>*.properties</mask>
     <mask>*.html</mask>
     <mask>*.jsp</mask>
@@ -17,7 +17,7 @@
     <mask>LeadPageV2.js</mask>
     <mask>*.feature</mask>
     <mask>*mixin*</mask>
-    <mask>*.js</mask>
     <mask>*Tests.js</mask>
+    <mask>*.js</mask>
   </component>
 </application>
